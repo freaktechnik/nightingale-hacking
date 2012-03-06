@@ -50,6 +50,7 @@ for dir in /usr/lib /usr/lib64 /usr/lib/i386-linux-gnu /usr/lib/x86_64-linux-gnu
   fi
 done
 
+
 cmdname=`basename "$0"`
 MOZ_DIST_BIN=`dirname "$0"`
 MOZ_DEFAULT_NAME="./${cmdname}-bin"

@@ -72,11 +72,7 @@ case $OSTYPE in
       fi
     done
     
-    # !!!! NOTICE: comment the below out if building on/for Windows or Mac or playback probably won't work !!!!
-    if [ -f nightingale.config ] ; then
-      rm nightingale.config
-    fi
-    echo 'ac_add_options --with-media-core=gstreamer-system' >> nightingale.config
+    echo 'ac_add_options --with-media-core=gstreamer-system' > nightingale.config
     ;;
   msys*)
     depdirn="windows-i686"
@@ -97,7 +93,7 @@ case $OSTYPE in
 		mkdir "$depdirn"
 		tar --lzma -xvf "$depdirn-$version.tar.lzma" -C "$depdirn"
     fi
-    cd ../
+    cd ../    
     ;;
   darwin*)
 	# no wget on OSX, use curl
@@ -151,7 +147,7 @@ cd ../
 cd $buildir
 
 # hopefully we have python2 on this system
-export PYTHON="$(which python2 2>/dev/null || which python)"
+export PYTHON="$(which python2|grep -v 'not found' || which python)"
 
 make -f nightingale.mk clobber
 rm -rf compiled &> /dev/null #sometimes clobber doesn't nuke it all
