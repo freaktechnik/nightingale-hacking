@@ -71,14 +71,16 @@ Notes for Configurable Options
 
 libnotify support
 -----------------
-dependencies: libnotify-dev
-              libgtk2.0-dev
+dependencies:
+  * libnotify-dev
+  * libgtk2.0-dev
 
 Unity sound menu integration
 ----------------------------
-dependencies: libunity-dev
-              libnotify-dev
-              libgtk2.0-dev
+dependencies:
+  * libunity-dev
+  * libnotify-dev
+  * libgtk2.0-dev
 
 Contributions
 =============
