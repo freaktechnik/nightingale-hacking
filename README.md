@@ -26,7 +26,7 @@ into compiled-dist-linux-[your arch]/dist/gst-plugins and then
 rerun nightingale. It should then play music.
 
 Building
-=======
+========
 If on Linux, simply run the [build.sh](build.sh) script. It will download the deps
 and build the app for you. You'll generally need the usual build deps
 for most software packages, though.
@@ -49,7 +49,7 @@ More information can be gleaned from the Nightingale wiki:
   * [Linux](http://tinyurl.com/d569knt)
 
 Configure Options
-===============
+=================
 
   ac_add_options (option here)
   --with-taglib-source=[system,packaged] use system taglib or not
@@ -67,26 +67,26 @@ Configure Options
   --enable-unity-integration            Optional support for Unity's sound menu
 
 Notes for Configurable Options
-===========================
+==============================
 
 libnotify support
----------------
+-----------------
 dependencies: libnotify-dev
               libgtk2.0-dev
 
 Unity sound menu integration
--------------------------
+----------------------------
 dependencies: libunity-dev
               libnotify-dev
               libgtk2.0-dev
 
 Contributions
-===========
+=============
 To join in and help, please visit [our forum](http://forum.getnightingale.com/)
 or jump into #nightingale on irc.mozilla.org.
 
 Contributors
-===========
+============
   * Steven Bengtson - Stevo
   * Janek Bevendorff - Manko10
   * chocolateboy
@@ -109,12 +109,12 @@ Contributors
 
 
 REMINDER!!!!
-===========
+============
 
 This is an open source software and everyone who works on it is a
 volunteer! Don't be a troll towards the people giving you free
 software and hard work!
-```
+<pre>
 ░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄░░░░░░░
 ░░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄░░░░
 ░░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█░░░
@@ -130,4 +130,4 @@ software and hard work!
 ░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░▒░░░█░
 ░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░░░░█░
 ░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░░░░█░░
-```
+</pre>
