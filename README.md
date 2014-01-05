@@ -10,26 +10,24 @@ fact.
 This git tree is the Songbird trunk, rebranded for Nightingale. It's a 
 reflection of what our Xul 6+ releases will be like.
 
-========================================================================
-Notes:
-========================================================================
+Notes
+=====
 
-*To build, you need to have all of the gstreamer0.10 packages for your 
+  * To build, you need to have all of the gstreamer0.10 packages for your 
 distro, svn, wget, and git (if pulling the tree down) installed, 
 as well as the usual dependencies for building software upon your 
 distro.
 
-*If it gets python errors, make sure you have python2 installed,
+  * If it gets python errors, make sure you have python2 installed,
 and try the build.sh script again.
 
-*If it doesn't play music, you'll need to copy /usr/lib/gstreamer0.10/*
+  * If it doesn't play music, you'll need to copy /usr/lib/gstreamer0.10/*
 into compiled-dist-linux-[your arch]/dist/gst-plugins and then 
 rerun nightingale. It should then play music.
 
-========================================================================
-Building:
-========================================================================
-If on Linux, simply run the build.sh script. It will download the deps
+Building
+=======
+If on Linux, simply run the [build.sh](build.sh) script. It will download the deps
 and build the app for you. You'll generally need the usual build deps
 for most software packages, though.
 
@@ -37,18 +35,24 @@ Ubuntu and Debian users should note you'll need:
 libdbus-glib-1-dev
 libgstreamer-plugins-base0.10-dev
 
-More information can be gleaned from the Songbird wiki:
+Also note that because of Ubuntu and Debian's incompatible taglib,
+you'll want to use 
+```
+ac_add_options --with-taglib-source=packaged
+```
+option to your nightingale.config
 
-Windows: http://tinyurl.com/3jfo6lv
-Mac: http://tinyurl.com/3bwg8e3
-Linux: http://tinyurl.com/3kh3gk8
+More information can be gleaned from the Nightingale wiki:
 
-========================================================================
-Configure Options:
-========================================================================
+  * [Windows](http://tinyurl.com/ce3anjo)
+  * [Mac](http://tinyurl.com/ckca4no)
+  * [Linux](http://tinyurl.com/d569knt)
+
+Configure Options
+===============
 
   ac_add_options (option here)
-  
+  --with-taglib-source=[system,packaged] use system taglib or not
   --enable-debug                        whether or not to compile debug
   --enable-jars                         whether or not to create jars
   --enable-installer                    whether or not to make installer
@@ -59,39 +63,58 @@ Configure Options:
   --enable-breakpad                     whether or not to enable breakpad
   --enable-static                       single-component static build
   --enable-compiler-environment-checks  only allow supported compilers
+  --enable-libnotify                    Optionally enable libnotify
+  --enable-unity-integration            Optional support for Unity's sound menu
 
-========================================================================
-Contributions:
-========================================================================
+Notes for Configurable Options
+===========================
 
-To join in and help, please visit http://forum.getnightingale.com/
+libnotify support
+---------------
+dependencies: libnotify-dev
+              libgtk2.0-dev
+
+Unity sound menu integration
+-------------------------
+dependencies: libunity-dev
+              libnotify-dev
+              libgtk2.0-dev
+
+Contributions
+===========
+To join in and help, please visit [our forum](http://forum.getnightingale.com/)
 or jump into #nightingale on irc.mozilla.org.
 
-========================================================================
-Contributors:
-========================================================================
+Contributors
+===========
+  * Steven Bengtson - Stevo
+  * Janek Bevendorff - Manko10
+  * chocolateboy
+  * Downward
+  * Lukas Diener - Lukas_Skywalker
+  * Matt Dwyer - MattSD
+  * Luis Gallego - luisgmarine
+  * Martin Giger - freaktechnik
+  * Geoffrey Gates - Timmythepirate
+  * Andrew Luecke - Auzy
+  * Matt Parnell - Ilikenwf
+  * Dirk Steinmetz - rsjtdrjgfuzkfg
+  * Lars Tobias Skjong-Børsting - larstobi
+  * Antoine Turmel - GeekShadow
+  * Mark Yen - Mook
+  * Akil Krishnan - LIB53
+  * Alexander Korenev - LookingMan
+  * John Murray - johnmurrayvi
+  * David Rogers - Ezekial1000
 
-* Steven Bengtson - Stevo
-* Janek Bevendorff - Manko10
-* Downward
-* Lukas Diener - Lukas_Skywalker
-* Matt Dwyer - MattSD
-* Martin Giger - freaktechnik
-* Geoffrey Gates - Timmythepirate
-* Andrew Luecke - Auzy
-* Matt Parnell - Ilikenwf
-* Dirk Steinmetz - rsjtdrjgfuzkfg
-* Antoine Turmel - GeekShadow
-* Mark Yen - Mook
 
-========================================================================
 REMINDER!!!!
-========================================================================
+===========
 
 This is an open source software and everyone who works on it is a
 volunteer! Don't be a troll towards the people giving you free
 software and hard work!
-
+```
 ░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄░░░░░░░
 ░░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄░░░░
 ░░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█░░░
@@ -107,3 +130,4 @@ software and hard work!
 ░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░▒░░░█░
 ░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░░░░█░
 ░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░░░░█░░
+```
