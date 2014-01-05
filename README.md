@@ -52,19 +52,20 @@ Configure Options
 =================
 
   ac_add_options (option here)
-  --with-taglib-source=[system,packaged] use system taglib or not
-  --enable-debug                        whether or not to compile debug
-  --enable-jars                         whether or not to create jars
-  --enable-installer                    whether or not to make installer
-  --enable-official                     whether or not to official build
-  --enable-nightly                      whether or not to nightly build
-  --enable-tests                        whether or not to build tests
-  --enable-update-channel=CHANNEL       which update channel to use
-  --enable-breakpad                     whether or not to enable breakpad
-  --enable-static                       single-component static build
-  --enable-compiler-environment-checks  only allow supported compilers
-  --enable-libnotify                    Optionally enable libnotify
-  --enable-unity-integration            Optional support for Unity's sound menu
+  
+  --with-taglib-source=[system,packaged] use system taglib or not  
+  --enable-debug                        whether or not to compile debug  
+  --enable-jars                         whether or not to create jars  
+  --enable-installer                    whether or not to make installer  
+  --enable-official                     whether or not to official build  
+  --enable-nightly                      whether or not to nightly build  
+  --enable-tests                        whether or not to build tests  
+  --enable-update-channel=CHANNEL       which update channel to use  
+  --enable-breakpad                     whether or not to enable breakpad  
+  --enable-static                       single-component static build  
+  --enable-compiler-environment-checks  only allow supported compilers  
+  --enable-libnotify                    Optionally enable libnotify  
+  --enable-unity-integration            Optional support for Unity's sound menu  
 
 Notes for Configurable Options
 ==============================
@@ -116,7 +117,7 @@ REMINDER!!!!
 This is an open source software and everyone who works on it is a
 volunteer! Don't be a troll towards the people giving you free
 software and hard work!
-<pre>
+
 ░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄░░░░░░░
 ░░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄░░░░
 ░░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█░░░
@@ -132,4 +133,4 @@ software and hard work!
 ░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░▒░░░█░
 ░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░░░░█░
 ░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░░░░█░░
-</pre>
+
